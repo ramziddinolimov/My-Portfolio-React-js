@@ -11,7 +11,7 @@ function Sidebar() {
 }
 
 const SidebarStyled = styled.div`
-    width: 30.3rem;
+    width: 25.3rem;
     height: 100vh;
     position: fixed;
     background-color: var(--sidebar-dark-color);
