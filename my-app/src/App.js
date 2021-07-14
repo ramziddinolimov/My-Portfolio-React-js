@@ -1,16 +1,15 @@
-import styled from 'styled-components';
+
+import Sidebar from "./Components/Sidebar";
 
 
 function App() {
   return (
-    <AppStyled>
-      <h1>Styled</h1>
-    </AppStyled>
-  )
+    <div className="App">
+      <Sidebar />
+    </div>
+  );
 }
 
 
-const AppStyled = styled.div 
-`background-color: red;`
-;
+
 export default App;
