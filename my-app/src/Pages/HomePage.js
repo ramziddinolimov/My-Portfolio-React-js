@@ -10,7 +10,8 @@ function HomePage() {
 }
 
 const HomePageStyled = styled.header`
-
+    width: auto;
+    height: 100vh;
 `;
 
 export default HomePage;
