@@ -68,7 +68,7 @@ const NavigationStyled = styled.nav`
             display: block;
             a{
                 display: block;
-                padding: .2rem 0;
+                padding: .8rem 0;
                 position: relative;
                 z-index: 10;
                 &:hover{
