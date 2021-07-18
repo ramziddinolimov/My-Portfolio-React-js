@@ -15,11 +15,21 @@ function HomePage() {
                <h1>Hi I'm <span>Ramziddin Olimov</span></h1>
                <p>dfhjdsbhjsbfhjds dfjdsfjds djfnjsdbfjsdnji ndjanklasdo  dnnaosm  ndndndo  ednen jnedne ewondnew nede djwe nn wene nn</p>
                <div className="icons">
-                   <div className="i-facebook"></div>
-                   <div className="i-instagram"></div>
-                   <div className="i-telegram"></div>
-                   <div className="i-github"></div>
-                   <div className="i-linkedin"></div>
+                   <div className="icon i-facebook">
+                       <FacebookIcon />
+                   </div>
+                   <div className="icon i-instagram">
+                       <InstagramIcon />
+                   </div>
+                   <div className="icon i-telegram">
+                       <TelegramIcon />
+                   </div>
+                   <div className="icon i-github">
+                       <GithubIcon />
+                   </div>
+                   <div className="icon i-linkedin">
+                       <LinkedinIcon />
+                   </div>
                </div>
            </div>
         </HomePageStyled>
@@ -29,6 +39,39 @@ function HomePage() {
 const HomePageStyled = styled.header`
     width: auto;
     height: 100vh;
+
+    .typography{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        .icon{
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            &:hover{
+                border: 2px solid var(--primary-color);
+                color: var(--primary-color);
+            }
+            &:not(:last-child){
+                margin-right: 2rem;
+                cursor: pointer;
+            }
+            svg{
+                margin: .5rem;
+            }
+        }
+    }
 `;
 
 export default HomePage;
