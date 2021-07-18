@@ -8,6 +8,8 @@ import HomePage from "./Pages/HomePage";
 function App() {
   return (
     <div className="App">
+
+
       <Sidebar />
       <MainContentStyled>
         <div className="lines">
