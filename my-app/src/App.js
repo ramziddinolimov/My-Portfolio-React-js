@@ -2,6 +2,7 @@
 import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
 import HomePage from "./Pages/HomePage";
+import { Route, Switch } from "react-router";
 
 
 
@@ -18,7 +19,13 @@ function App() {
           <div className ="line-3"></div>
           <div className ="line-4"></div>
         </div>
-        <HomePage />
+
+        <Switch>
+          <Route>
+           <HomePage />
+          </Route>
+        </Switch>
+        
 
       </MainContentStyled>
     </div>
