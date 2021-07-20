@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
+import Title from '../Components/Title';
 import {MainLayout} from '../styles/Layouts';
 
 function AboutPage() {
     return (
         <MainLayout>
             <AboutStyled>
-                <h1>Hello about page</h1>
+                <Title title={'About me'} span={'About Me'} />
             </AboutStyled>
             
         </MainLayout>
