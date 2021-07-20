@@ -1,11 +1,20 @@
 import React from 'react'
+import styled from 'styled-components';
+import {MainLayout} from '../styles/Layouts';
 
 function AboutPage() {
     return (
-        <div>
+        <MainLayout>
+            <AboutStyled>
+                <h1>Hello about page</h1>
+            </AboutStyled>
             
-        </div>
+        </MainLayout>
     )
 }
+
+const AboutStyled = styled.section`
+
+`;
 
 export default AboutPage
