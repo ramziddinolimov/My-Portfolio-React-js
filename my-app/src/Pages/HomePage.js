@@ -15,21 +15,21 @@ function HomePage() {
                <h1>Hi I'm <span>Ramziddin Olimov</span></h1>
                <p>dfhjdsbhjsbfhjds dfjdsfjds djfnjsdbfjsdnji ndjanklasdo  dnnaosm  ndndndo  ednen jnedne ewondnew nede djwe nn wene nn</p>
                <div className="icons">
-                   <div className="icon i-facebook">
+                   <a href="https://codepen.io/pen/" className="icon i-facebook">
                        <FacebookIcon />
-                   </div>
-                   <div className="icon i-instagram">
+                   </a>
+                   <a href="https://codepen.io/pen/" className="icon i-instagram">
                        <InstagramIcon />
-                   </div>
-                   <div className="icon i-telegram">
+                   </a>
+                   <a href="https://codepen.io/pen/" className="icon i-telegram">
                        <TelegramIcon />
-                   </div>
-                   <div className="icon i-github">
+                   </a>
+                   <a href="https://codepen.io/pen/" className="icon i-github">
                        <GithubIcon />
-                   </div>
-                   <div className="icon i-linkedin">
+                   </a>
+                   <a href="https://codepen.io/pen/" className="icon i-linkedin">
                        <LinkedinIcon />
-                   </div>
+                   </a>
                </div>
            </div>
         </HomePageStyled>
@@ -59,16 +59,31 @@ const HomePageStyled = styled.header`
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
             &:hover{
                 border: 2px solid var(--primary-color);
                 color: var(--primary-color);
             }
             &:not(:last-child){
                 margin-right: 2rem;
-                cursor: pointer;
+                
             }
             svg{
                 margin: .5rem;
+            }
+        }
+        .i-facebook{
+            &:hover{
+                border: 2px solid blue;
+                color: blue;
+            }
+        }
+        
+        .i-github{
+            &:hover{
+                border: 2px solid #5f4687;
+                color: #5f4687;
             }
         }
     }
