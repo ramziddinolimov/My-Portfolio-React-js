@@ -38,7 +38,7 @@ function ServicesSection() {
 
 const ServicesSectionStyled = styled.section`
     .services{
-        margin-top: 5rem;
+        margin-top: 6rem;
         display: flex;
         justify-content: space-between;
         .mid-card{
