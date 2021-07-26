@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function PrimaButton({title}) {
+function PrimaryButton({title}) {
     return (
         <PrimaryButtonStyled>
             {title}
@@ -20,15 +20,21 @@ const PrimaryButtonStyled = styled.a`
     text-transform: uppercase;
     position: relative;
     transition: all 9s ease-in-out;
-    &:hover::after{
-        content: "";
+    &::after{
+        content:"";
         position: absolute;
-        width: 100%;
+        width: 0;
         height: .2rem;
-        background-color: var(--white-color);
-        transition: all 9s ease-in-out;
+        transition: all .4s ease-in-out;
         left: 0;
         bottom: 0;
+        opacity: .7;
+    }
+    &:hover::after{
+        
+        width: 100%;
+        
+        background-color: var(--white-color);
     }
 `;
-export default PrimaButton;
+export default PrimaryButton;

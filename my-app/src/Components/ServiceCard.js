@@ -15,7 +15,15 @@ function ServiceCard({image, title, paragraph}) {
 
 const ServiceCardStyled = styled.div`
     background-color: var(--background-dark-grey);
-    margin: 0 1rem;
+    border-left: 1px solid var(--border-color);
+    border-top: 8px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    transition: all 1s ease-in-out;
+    &:hover{
+        border-top: 8ox solid var(--primary-color);
+        transform: translateY(3px);
+    }
     .container{
         padding: 1.2rem;
         h4{
@@ -25,13 +33,17 @@ const ServiceCardStyled = styled.div`
             position: relative;
             &::after{
                 content: "";
-                width: 2rem;
+                width: 4rem;
                 background-color: var(--border-color);
-                height: 4px;
+                height: 3px;
                 position: absolute;
                 left: 0;
                 bottom: 0;
+                border-radius: 10px;
             }
+        }
+        p{
+            padding: .8rem  0;
         }
     }
 `;
