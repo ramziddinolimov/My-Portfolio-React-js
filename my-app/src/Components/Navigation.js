@@ -52,7 +52,7 @@ const NavigationStyled = styled.nav`
         padding: 1rem 0;
         img{
             width: 80%;
-            height: 450px;
+            height: 410px;
             border-radius: 50%;
             border: 10px solid var(--border-color);
         }
