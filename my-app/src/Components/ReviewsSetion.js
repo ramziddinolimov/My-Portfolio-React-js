@@ -12,6 +12,7 @@ function ReviewsSetion() {
                 <InnerLayout>
                     <div className="reviews">
                         <ReviewItem text={'fewfwe fewfwe fwefw fwef wefwefw efwef wefwefwe fwe fwe'} />
+                        <ReviewItem text={'fewfwe fewfwe fwefw fwef wefwefw efwef wefwefwe fwe fwegf fdsfsf fsdfs fsdfs fsdf'} />
                     </div>
                 </InnerLayout>
             </ReviewsStyled>
@@ -20,7 +21,9 @@ function ReviewsSetion() {
 }
 
 const ReviewsStyled = styled.section`
-
+    .reviews{
+        display: flex;
+    }
 `;
 
 export default ReviewsSetion;

@@ -10,15 +10,18 @@ function ReviewItem({text}) {
 }
 
 const RevivewItemStyled = styled.div`
-    height: 15vh;
+    width: 50%;
     padding: 2rem 1rem;
     border-left: 6px solid var(--border-color);
     background-color: var(--background-dark-grey);
     position: relative;
+    &:not(:first-child){
+        margin-left: 2rem;
+    }
     &::after{
         content: "";
         position: absolute;
-        left: 1rem;
+        left: 2rem;
         border-width: .8rem;
         top: 100%;
         border-style: solid;
