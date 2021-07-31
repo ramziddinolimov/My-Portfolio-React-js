@@ -3,8 +3,15 @@ import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
 import PrimaryButton from '../Components/PrimaryButton';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import ContactItem from '../Components/ContactItem';
 
 function ContactPage() {
+    const phone = <PhoneIcon />
+    const email = <EmailIcon />
+    const location = <LocationOnIcon />
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'} />
@@ -38,7 +45,11 @@ function ContactPage() {
                         </div>
                     </form>
                 </div>
-                <div className="right-content"></div>
+                <div className="right-content">
+                    <ContactItem title={'Phone'} icon={phone} cont1={'+43487232'} cont2={'+43487232'} />
+                    <ContactItem title={'Email'} icon={email} cont1={'+43487232'} cont2={'+43487232'} />
+                    <ContactItem title={'Address'} icon={location} cont1={'+43487232'} cont2={'+43487232'} />
+                </div>
             </InnerLayout>
             </ContactPageStyled>
         </MainLayout>
