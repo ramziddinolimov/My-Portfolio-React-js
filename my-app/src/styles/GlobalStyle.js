@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
         --border-color: #2e344e;
         --background-light-color: #f1f1f1;
         --background-light-color-2: rgba(3,127,255, .3);
+        
         --white-color: #fff;
         --font-light-color: #a4acc4;
         --font-dark-color: #313131;
@@ -19,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
         --scrollbar-bg-color: #383838;
         --scrollbar-thump-color: #6b6b6b;
         --scrollbar-track-color: #383838;
+        
     }
     
     *{

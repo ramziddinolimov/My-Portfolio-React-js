@@ -12,14 +12,14 @@ function BlogsPage() {
             <InnerLayout className={'blog'}>
             {
                 blogs.map((blog)=>{
-                    return <div key={blog.id}>
+                    return <div key={blog.id} className={'blog-item'}>
                         <div className="image">
                             <img src={blog.image} alt=""/>
                         </div>
                         <div className="title">
-                            <h4>
+                            <a href={blog.link}>
                                 {blog.title}
-                            </h4>
+                            </a>
                         </div>
                     </div>
                 })
@@ -34,11 +34,20 @@ const BlogsStyled = styled.div`
     .blog{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+        
+        .blog-item{
+            background-color: var(--background-dark-grey);
+            padding: 1rem 1rem;
+        }
         .image{
             width: 100%;
-            height: 100%;
+            height: 90%;
             img{
                 width: 100%;
+                height: 90%;
+                object-fit: cover;
             }
         }
     }

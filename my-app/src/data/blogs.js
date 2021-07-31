@@ -25,6 +25,7 @@ const blogs = [
         title: 'How To Tse SEO Efficiently',
         date: '01',
         month: 'April',
+        link: 'https://www.google.ru/',
         image: blog3
     },
 
