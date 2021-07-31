@@ -44,10 +44,29 @@ const BlogsStyled = styled.div`
         .image{
             width: 100%;
             height: 90%;
+            overflow: hidden;
+            padding-bottom: .5rem;
             img{
                 width: 100%;
                 height: 90%;
                 object-fit: cover;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    transform: rotate(3deg) scale(1.1);
+                }
+            }
+        }
+        .title{
+            a{
+                font-size: 1.8rem;
+                color: var(--white-color);
+                padding: 2rem 0;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: var(--primary-color);
+                }
             }
         }
     }
