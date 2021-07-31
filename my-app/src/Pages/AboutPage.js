@@ -6,6 +6,7 @@ import {MainLayout} from '../styles/Layouts';
 import ServicesSection from '../Components/ServicesSection';
 import ReviewsSetion from '../Components/ReviewsSetion';
 
+
 function AboutPage() {
     return (
         <MainLayout>
