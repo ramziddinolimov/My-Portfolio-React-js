@@ -1,14 +1,16 @@
 import React from 'react';
 import Skills from '../Components/Skills';
-import { InnerLayout } from '../styles/Layouts';
+import { InnerLayout, MainLayout } from '../styles/Layouts';
 import Title from '../Components/Title'
+import Resume from '../Components/Resume';
 
 function ResumePage() {
     return (
-        <div>
+        <MainLayout>
             <Skills />
+            <Resume />
             
-        </div>
+        </MainLayout>
     )
 }
 

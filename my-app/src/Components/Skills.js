@@ -7,7 +7,7 @@ import ProgressBar from './ProgressBar';
 function Skills() {
     return (
         <SkillsStyled>
-            <MainLayout>
+            
                 <Title title={'My Skills'} span={'my Skills'} />
                 <InnerLayout>
                     <div className="skills">
@@ -54,7 +54,7 @@ function Skills() {
                         />
                     </div>
                 </InnerLayout>
-            </MainLayout>
+            
         </SkillsStyled>
     )
 }
