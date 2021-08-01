@@ -60,6 +60,11 @@ const ContactPageStyled = styled.section`
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        .right-content{
+            display: flex;
+            flex-direction: column;
+        }
         .contact-title{
             h4{
                 color: var(--white-color);
