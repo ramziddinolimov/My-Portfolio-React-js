@@ -25,6 +25,47 @@ function Resume() {
                         subTitle={'hefgwu'}
                         text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
                         />
+
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
+                        />
+
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
+                        />
+                    </div>
+
+                    <div className="small-titlee u-small-title-margin">
+                    <SmallTitle icon={school} title={'Working Experience'} />
+                    </div>
+
+                    <div className="resume-content">
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
+                        />
+
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
+                        />
+
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
+                        />
                     </div>
                 </InnerLayout>
             </ResumeStyled>
@@ -37,8 +78,12 @@ const ResumeStyled = styled.section`
         padding: 3rem;
     }
 
+    .u-small-title-margin{
+        margin-top: 4rem;
+    }
+
     .resume-content{
-        border-left: 2px solid var(--border-color);
+        border-left: 5px solid var(--border-color);
     }
 `;
 
