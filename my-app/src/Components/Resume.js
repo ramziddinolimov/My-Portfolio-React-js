@@ -5,6 +5,7 @@ import Title from '../Components/Title'
 import SmallTitle from '../Components/SmallTitle';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
+import ResumeItem from '../Components/ResumeItem';
 
 function Resume() {
     const briefcase = <BusinessCenterIcon />
@@ -14,8 +15,17 @@ function Resume() {
             <ResumeStyled>
                 <Title title={'Resume'} span={'resume'} />
                 <InnerLayout>
+                    <div className="small-titlee">
                     <SmallTitle icon={briefcase} title={'Working Experience'} />
-                    <div className="resume-content"></div>
+                    </div>
+                    <div className="resume-content">
+                        <ResumeItem 
+                        year={'2015-2020'}
+                        title={'Compuer'}
+                        subTitle={'hefgwu'}
+                        text={'wehjfbwe'}
+                        />
+                    </div>
                 </InnerLayout>
             </ResumeStyled>
         
@@ -23,7 +33,7 @@ function Resume() {
 }
 
 const ResumeStyled = styled.section`
-
+    
 `;
 
 export default Resume;
