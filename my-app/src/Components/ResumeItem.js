@@ -19,12 +19,24 @@ function ResumeItem({year, title, subTitle, text}) {
 const ResumeItemStyled = styled.div`
     display: flex;
     .left-content{
-        width: 20%;
+        width: 50%;
+        padding-left: 20px;
         p{
             display: inline-block;
         }
     }
     .right-content{
+        padding-left: 5rem;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            height: 2px;
+            width: 3rem;
+            background-color: var(--border-color);
+        }
         h5{
             color: var(--primary-color);
             font-size: 2rem;

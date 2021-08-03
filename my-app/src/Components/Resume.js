@@ -23,7 +23,7 @@ function Resume() {
                         year={'2015-2020'}
                         title={'Compuer'}
                         subTitle={'hefgwu'}
-                        text={'wehjfbwe'}
+                        text={'lorem uefhufnlkee ewv erwnvkerw vklnvirnwifjerwnfs fknrsfinef snfisnf rfkn fipewnfkirfn efewnpi fnwenfnewip fkewnifnrepnfewkfrne ferwnivnewf rknirn rk i'}
                         />
                     </div>
                 </InnerLayout>
@@ -33,7 +33,13 @@ function Resume() {
 }
 
 const ResumeStyled = styled.section`
-    
+    .small-titlee{
+        padding: 3rem;
+    }
+
+    .resume-content{
+        border-left: 2px solid var(--border-color);
+    }
 `;
 
 export default Resume;
