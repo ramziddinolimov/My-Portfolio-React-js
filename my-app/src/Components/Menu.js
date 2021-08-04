@@ -46,20 +46,72 @@ const MenuItemStyled = styled.div`
                 object-fit: cover;
             }
             ul{
-                display: none;
+            
+                transform: translateY(100px);
+                transition: all .4s ease-in-out ;
+                position: absolute;
+                left: 50%;
+                top: 40%;
             }
             .portfolio-image{
-                &::before{
-                    content: "";
+               &::before{
+                content: "";
                     position: absolute;
                     left: 2%;
                     top: 4%;
+                
+                    height: 0;
+                    width: 0;
+                    transition: all .4s ease-in-out;
+               }
+            }
+            .portfolio-image:hover{
+                ul{
+                    transform: translateY(0);
+                   
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center ;
+                    transition: all .4s ease-in-out;
+                    li{
+                        background-color: var(--border-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1rem;
+                        border-radius: 50%;
+                        margin: 0 .5rem;
+                        width: 3rem;
+                        height: 3rem;
+                        transition: all .4s ease-in-out;
+                        &:hover{
+                            background-color: var(--primary-color);
+                        }
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all .4s ease-in-out;
+                        }
+                    }
+                    li:hover{
+                        svg{
+                            color: var(--white-color);
+                        }
+                    }
+                    svg{
+                        font-size: 2rem;
+                    }
+                }
+                &::before{
+                    
                     height: calc(100% - 32%);
                     width: calc(100% - 4%);
                     background-color: white;
                     opacity: 0.9;
-                    transform-origin: 0;
-                    transform: scale(1);
+                    transform-origin: left;
+                    
                     transition: all .4s ease-in-out;
                 }
             }
