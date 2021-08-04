@@ -23,6 +23,14 @@ const ButtonStyled = styled.button`
     padding: .5rem 2rem;  
     font-size: inherit;
     color: var(--white-color);
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    &:active, &:focus{
+        background-color: var(--primary-color);
+    } 
+    &:hover{
+        background-color: var(--primary-color);
+    }
     &:not(:last-child){
         margin-right: 1rem;
     }

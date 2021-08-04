@@ -48,6 +48,21 @@ const MenuItemStyled = styled.div`
             ul{
                 display: none;
             }
+            .portfolio-image{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 2%;
+                    top: 4%;
+                    height: calc(100% - 32%);
+                    width: calc(100% - 4%);
+                    background-color: white;
+                    opacity: 0.9;
+                    transform-origin: 0;
+                    transform: scale(1);
+                    transition: all .4s ease-in-out;
+                }
+            }
         }
     }
 `;
