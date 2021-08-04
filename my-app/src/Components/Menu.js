@@ -12,8 +12,7 @@ function Menu({menuItem}) {
                         <div className="portfolio-content">
                             <div className="portfolio-image">
                                 <img src={item.image} alt="" />
-                            </div>
-                            <ul>
+                                <ul>
                                 <li>
                                     <a href={item.link1}> <GitHub /></a>
                                 </li>
@@ -22,6 +21,9 @@ function Menu({menuItem}) {
                                     <a href={item.link2}> <Pinterest /></a>
                                 </li>
                             </ul>
+                            </div>
+                            <h6>{item.title}</h6>
+                            <p>{item.text}</p>
                         </div>
                     </div>
                 })
@@ -31,7 +33,21 @@ function Menu({menuItem}) {
 }
 
 const MenuItemStyled = styled.div`
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    .grid-item{
+        .portfolio-content{
+            display: block;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            ul{
+                display: none;
+            }
+        }
+    }
 `;
 
 export default Menu;
