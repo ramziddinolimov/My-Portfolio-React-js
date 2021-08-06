@@ -19,14 +19,9 @@ function App() {
 
 
       <Sidebar />
-      <MainContentStyled>
-        <div className="lines">
-          <div className ="line-1"></div>
-          <div className ="line-2"></div>
-          <div className ="line-3"></div>
-          <div className ="line-4"></div>
-        </div>
-        <div className="light-dark-mode">
+
+     <div className="theme">
+       <div className="light-dark-mode">
           <div className="left-content">
             <Brightness4Icon />
           </div>
@@ -36,9 +31,20 @@ function App() {
             // checked={}
             // onChange={}
             inputProps={{ 'aria-label': '' }}
+            size="medium"
             />
           </div>
         </div>
+     </div>
+
+      <MainContentStyled>
+        <div className="lines">
+          <div className ="line-1"></div>
+          <div className ="line-2"></div>
+          <div className ="line-3"></div>
+          <div className ="line-4"></div>
+        </div>
+       
 
         <Switching>
           <Route path="/" exact>
