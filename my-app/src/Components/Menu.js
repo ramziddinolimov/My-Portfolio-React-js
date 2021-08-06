@@ -40,14 +40,15 @@ const MenuItemStyled = styled.div`
         .portfolio-content{
             display: block;
             position: relative;
+            overflow: hidden;
             img{
                 width: 100%;
                 height: 30vh;
                 object-fit: cover;
             }
             ul{
-            
-                transform: translateY(100px);
+                opacity: 0;
+                transform: translateY(-600px);
                 transition: all .4s ease-in-out ;
                 position: absolute;
                 left: 50%;
@@ -68,7 +69,7 @@ const MenuItemStyled = styled.div`
             .portfolio-image:hover{
                 ul{
                     transform: translateY(0);
-                   
+                    opacity: 1;
                     transform: translate(-50%, -50%);
                     display: flex;
                     align-items: center;
