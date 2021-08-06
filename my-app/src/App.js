@@ -10,10 +10,17 @@ import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import { Route, Switch as Switching } from "react-router";
 import Switch from "@material-ui/core/Switch";
+import { useEffect, useState } from "react";
 
 
 
 function App() {
+  const [theme, setTheme] = useState('dark-theme');
+
+  useEffect(()=>{
+    document.documentElement.className = theme;
+  }, [theme]);
+
   return (
     <div className="App">
 
@@ -28,10 +35,11 @@ function App() {
           <div className="right-content">
             <Switch
             value=""
-            // checked={}
+            checked={''}
             // onChange={}
             inputProps={{ 'aria-label': '' }}
             size="medium"
+            
             />
           </div>
         </div>
