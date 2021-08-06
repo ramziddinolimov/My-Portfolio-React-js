@@ -75,7 +75,7 @@ const MenuItemStyled = styled.div`
                     justify-content: center ;
                     transition: all .4s ease-in-out;
                     li{
-                        background-color: var(--border-color)
+                        background-color: var(--border-color);
                         display: flex;
                         align-items: center;
                         justify-content: center;
