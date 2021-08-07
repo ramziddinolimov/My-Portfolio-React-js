@@ -10,6 +10,7 @@ import ContactPage from "./Pages/ContactPage";
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import { Route, Switch as Switching } from "react-router";
 import Switch from "@material-ui/core/Switch";
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 
@@ -54,6 +55,12 @@ function App() {
             />
           </div>
         </div>
+     </div>
+
+     <div className="ham-burger-menu">
+       <iconButton>
+         <MenuIcon />
+       </iconButton>
      </div>
 
       <MainContentStyled>
@@ -101,6 +108,9 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 25.3rem;
   min-height: 100vh;
+  @media screen and (max-width:1200px){
+        margin-left: 0;
+    }
 
   .lines{
     position: absolute;
