@@ -18,6 +18,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 function App() {
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
 
   useEffect(()=>{
     document.documentElement.className = theme;
@@ -37,7 +38,7 @@ function App() {
     <div className="App">
 
 
-      <Sidebar />
+      <Sidebar className={`${navToggle ? 'nav-    toggler': ''}`} />
 
      <div className="theme">
        <div className="light-dark-mode">
@@ -69,6 +70,7 @@ function App() {
           <div className ="line-2"></div>
           <div className ="line-3"></div>
           <div className ="line-4"></div>
+  
         </div>
        
 

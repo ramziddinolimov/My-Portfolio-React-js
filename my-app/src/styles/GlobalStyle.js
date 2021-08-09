@@ -146,6 +146,10 @@ const GlobalStyle = createGlobalStyle`
           font-size: 3rem;
       }
   }
+
+  .nav-toglee{
+      transform: translate(-100%);
+  }
 `;
 
 export default GlobalStyle;
