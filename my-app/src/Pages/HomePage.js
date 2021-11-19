@@ -13,7 +13,7 @@ function HomePage() {
         <HomePageStyled>
            <div className="typography">
                <h1>Hi I'm <span>Ramziddin Olimov</span></h1>
-               <p>dfhjdsbhjsbfhjds dfjdsfjds djfnjsdbfjsdnji ndjanklasdo  dnnaosm  ndndndo  ednen jnedne ewondnew nede djwe nn wene nn</p>
+               <p></p>
                <div className="icons">
                    <a href="https://codepen.io/pen/" className="icon i-facebook">
                        <FacebookIcon />
